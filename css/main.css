@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.home {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.slide:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+}
+
+.slide figure {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.slide p {
+  transform: translateZ(0.1px) scale(0.8);
+  width: 33%;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: #0C4428;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba 0, 0, 0, 0.7;
+  border-radius: 80px;
+  line-height: 24px;
+}
+
+#title {
+  background-image: url("../img/title-slide.png");
+  background-attachment: fixed;
+}
+
+#slide1:before {
+  background-color: #0C4428;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide2 {
+  background-image: url("../img/oxygen-slide.png");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-color: #0C4428;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide4 {
+  background-image: url("../img/deforestation.png");
+  background-attachment: fixed;
+}
+
+#slide5:before {
+  background-image: url("../img/generation-slide.png");
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+#slide6 {
+  background-image: url("../img/amazon.png");
+  background-attachment: fixed;
+}
+
+aside {
+  position: relative;
+  left: 500px;
+  top: -620px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  color: #A3111B;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 42px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1,
+p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.facts {
+  color: #A3111B;
+  font-size: 36px;
+}
+
+a {
+  color: #A3111B;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  min-width: 33%;
+}
+
+/* background-image: url('../img/generation-slide.png') */
